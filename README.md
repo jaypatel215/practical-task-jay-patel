@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Task Management Tool
 
 A simplified project management application for creating projects, managing tasks, assigning work to team members, tracking progress with a Kanban board, and viewing dashboard metrics.
@@ -224,3 +225,6 @@ App URL: **http://localhost:3000**
 | GET | `/api/dashboard/summary` | Dashboard metrics |
 
 See [docs/PRD.md](docs/PRD.md) and the [bruno/](bruno/) collection for full request/response details.
+=======
+# practical-task-jay-patel
+>>>>>>> 5fb6f778fe1360c80fbb6655519ab027efa5861c
