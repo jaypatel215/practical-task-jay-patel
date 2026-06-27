@@ -1,0 +1,28 @@
+meta {
+  name: Create Project
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/projects
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "name": "Website Redesign",
+    "description": "Redesign the company website"
+  }
+}
+
+script:post-response {
+  if (res.status === 201) {
+    bru.setEnvVar("projectId", res.body.id);
+  }
+}
